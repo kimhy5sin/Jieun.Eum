@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>지은에게</title>
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+		<meta property="og:image" content="https://item.kakaocdn.net/do/87758de309adb0bb4d80924b88a156bf8f324a0b9c48f77dbce3a43bd11ce785">
+		<meta property="og:title" content="지은에게">
+		<meta property="og:description" content="사탕 말고 편지 받으세욧">
+		<link rel="shortcut icon" href="">
+		<!-- <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script> -->
+		<style>
+			* {
+				font-family: 'Noto Sans KR', sans-serif;
+			}
+			body {
+				background-color: #6699FF;
+			}
+			.envelope {
+				background-image: url(https://cdn-icons-png.flaticon.com/512/73/73756.png);
+				background-size: cover;
+				background-position: center;
+				width: 200px;
+				height: 200px;
+				margin: 200px auto 0px auto;
+				cursor: pointer;
+			}
+			.envelope-msg {
+/*				color: ivory;*/
+				text-align: center;
+			}
+			.letter-close {
+				display: block;
+			}
+			.letter-open {
+				display: none;
+			}
+			.tojieun {
+				width: 200px;
+				height: 200px;
+				background-image: url('https://item.kakaocdn.net/do/747f542bfda3ef06b8d8e45a72c73e7df43ad912ad8dd55b04db6a64cddaf76d');
+				background-size: cover;
+				background-position: center;
+				background-color: ivory;
+				margin: 100px auto 0px auto;
+				border-radius: 100px;
+/*				border: 5px solid ivory;*/
+/*				box-shadow: 0px 0px 10px 0px ivory;*/
+			}
+			h1 {
+				text-align: center;
+				color: ivory;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			.messagebox {
+				width: 300px;
+				margin: auto;
+				font-size: 20px;
+				line-height: 30px;
+				background-color: ivory;
+				padding: 30px;
+/*				box-shadow: 0px 0px 10px 0px ivory;*/
+			}
+			.from {
+				text-align: right;
+				margin-top: 20px;
+				margin-bottom: 0px;
+			}
+			@media screen and (max-width: 760px) {
+				.messagebox {
+					width: 300px;
+					font-size: 20px;
+					line-height: 30px;
+					padding: 20px;
+				}
+				.tojieun {
+					width: 150px;
+					height: 150px;
+					margin: 70px auto 0px auto;
+				}
+				h1 {
+					font-size: 28px;
+				}
+				.envelope {
+					margin: 150px auto 0px auto;
+				}
+			}
+		</style>
+	    <script>
+	        function open_letter() {
+	            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+	            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+	        }
+			// function go_yellow() {
+				// alert('순할때는 효딩');
+				// window.location.href = 'https://item.kakaocdn.net/do/747f542bfda3ef06b8d8e45a72c73e7df43ad912ad8dd55b04db6a64cddaf76d'
+			// }
+		</script>
+	</head>
+	<body>
+		<div class="letter-close">
+			<div class="envelope" onclick="open_letter()"></div>
+			<h2 class="envelope-msg">사탕 말고 편지 받으세욧<br />♥</h2>
+		</div>
+		<div class="letter-open">
+			<div class="tojieun"></div>
+			<h1>지은에게</h1>
+			<div class="messagebox">
+				내가 요즘 너무 많이 괴롭혔죠?<br />
+				그래서 많이 지치고 힘들었겠어요.<br />
+				아니 지금도 계속 힘들겠죠.<br />
+				만난지 150일이 넘었는데 아직도<br />
+				오랜만의 연애라서인건 핑계겠지만,<br />
+				<br />
+				지은 말대로 내가 정말 그래요.<br />
+				예쁘고 귀엽고 어린 여자친구를 둬서<br />
+				나날이 행복하면서도 문득 불안하고<br />
+				내가 생각하고 위하는만큼,<br />
+				날 봐줬음 하는 욕심이 자꾸 생겨요.<br />
+				<br />
+				강박증이든 뭐든 고치고 노력할게요.<br />
+				우리 각자 살아온 세월동안<br />
+				서로 달라져버린 시간은 두고,<br />
+				앞으로 같이 행복하기도 부족한 시간<br />
+				하루하루 감사하게 생각하려고요.<br />
+				<br />
+				이렇게 나 받아줘서 고마워요.<br />
+				투덜이 남자친구 옆에서 고생 많아요.<br />
+				사랑해요. 정말 많이 사랑해요.<br /><br />
+				<p class="from" onclick="go_yellow()">2023년 화이트데이, 효딩</p>
+			</div>
+		</div>
+	</body>
+</html>
